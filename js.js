@@ -1,33 +1,14 @@
-'use strict';
+let display = document.querySelector(".calculator__screen-top");
+let buttons = document.querySelectorAll(".btn");
 
-var screenOperations = document.getElementById("screen_top");
-var screenResultview = document.getElementById("screen_result");
-var btts = document.getElementById("btns");
+let value = "";
 
-var operations = false;
+function escuchando(e) {
+    console.log(e.target.value);
+    value += e.target.textContent;
+    display.textContent = value;
+}
 
-var lastValue = function lastValue() {
-    return screenOperations.textContent.substring(screenOperations.textContent.length-1);
-};
-
-var writeOperation = function writeOperation(txt) {
-    if(screenOperations.textContent == '0' && txt != '.') screenOperations.textContent = ' ';
-
-    if(operations && isNaN(txt)) {
-        screenOperations.textContent = screenResultview.textContent;
-        operations = false;
-    }
-
-    if(operations && !isNaN(txt)) {
-        screenOperations.textContent = ' ';
-        screenResultview.textContent = '0';
-        operations = false;
-    }
-
-    if(isNaN(lastValue()) && isNaN(txt)) {
-        screenOperations.textContent = screenOperations.textContent.substring(0,screenOperations.textContent +=tr);
-    }
-
-
-
-};
+for (let i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener("click", escuchando);
+}

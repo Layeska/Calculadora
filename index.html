@@ -6,27 +6,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styless/normalize.css">
   <link rel="stylesheet" href="./styless/styless.css">
-  <script src="./js.js"></script>
+  
 
   <title>Calculadora</title>
 </head>
 <body>
+  <div id="nombre">
+    <h1>Proyecto Calculadora</h1>
+    <p>Usando: HTML, CSS & JS</p>
+  </div>
+  
   <main class="main">
     <div class="calculator">
-      <div class="calculator__top-bar"><span>Calculadora de: Ana Juárez</span></div>
+      <div class="calculator__top-bar"><span>Calculadora Estándar</span></div>
       
       <!-- Pantalla de Resultados -->
       <div class="calculator__screen">
-        <div class="calculator__screen-top" id="screen_top">5+10</div>
+        <div class="calculator__screen-top">0</div>
         <div class="calculator__screen-content" id="screen_result"> = 15</div>
       </div>
 
       <!-- Los botones de la calculadora -->
-      <div class="calculator__btn" id="btns">
+      <div class="calculator__btn">
         <div class="btn">C</div>
         <div class="btn">+/-</div>
         <div class="btn">%</div>
-        <div class="btn">/</div>
+        <div class="btn">÷</div>
         <div class="btn">7</div>
         <div class="btn">8</div>
         <div class="btn">9</div>
@@ -47,4 +52,5 @@
     </div>
   </main>
 </body>
+<script src="./js.js"></script>
 </html>
