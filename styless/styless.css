@@ -16,7 +16,7 @@ html {
 body {
     font-size: 16px;
     font-family: 'Nunito', sans-serif;  
-    background-image: linear-gradient(to right, #99d98c, #80ffdb);
+   
 }
 
 #nombre {
@@ -44,7 +44,8 @@ span {
   padding-right: 0.5rem;
   border-radius: 6rem;
   box-shadow: 10px 2px 9px 7px rgba(0,0,0,0.86);
-  background: #A3782F ;
+  background-image: linear-gradient(to right, #99d98c, #80ffdb);
+  /*background: #A3782F ;*/
 }
 
 /* Parte Superior de la Calculadora*/
@@ -58,17 +59,18 @@ span {
 .calculator__screen {
   background: #DAF7C6;
   border: 0.1rem solid #293250;
-  width: 100%;
+  width: 94%;
   height: 7rem;
   text-align: right;
   border-radius: 3rem;
+  margin-left: 1rem;
 }
   
 .calculator__screen-top {
   font-size: 2rem;
   padding: 1rem 0;
   margin-right: 1rem;
-  
+  position: static;
 }
 
 .calculator__screen-content {
@@ -83,8 +85,8 @@ span {
   margin-top: 1rem;
   grid-gap: 0.9rem;
   height: 37rem;
-  background: #777;
-  border: 0.1rem solid #293250;
+  /*background: #777;
+  border: 0.1rem solid #293250;*/
   border-radius: 4rem;
 }
 
@@ -119,12 +121,14 @@ span {
 
 .btn:nth-child(4n) {
   background: #FFD55A;
-  border-radius: 0.8rem;
 }
 
 .btn:hover { cursor: pointer;}
 
 .btn:nth-child(1) {
   background: #FFD55A;
-  border-radius: 0.8rem;
+}
+
+.btn:nth-child(2) {
+  background: #FFD55A;
 }
